@@ -1,7 +1,7 @@
 /** Defines a recursive list of integers.
  *  @author Josh Hug
  */
-
+//added comment
 public class IntList {
     public int head;
     public IntList tail;
