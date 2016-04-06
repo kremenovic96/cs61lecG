@@ -34,7 +34,11 @@ public class IntList {
       * Returns ith item of this IntList. For 
       * simplicity, assume the item exists. */
     public int get(int i) {
-        return 0;
+        if (i == 0) {
+            return head;
+        }
+
+        return tail.get(i - 1);
         /** your code here */
     }
 
