@@ -90,7 +90,7 @@ public class IntList {
         System.out.println(L.iterativeSize());
 
         // Test your answers by uncommenting. Or use the Visualizer.
-        // System.out.println(L.get(1));
+         System.out.println(L.get(1));
          System.out.println(incrList(L, 3));
          System.out.println(dincrList(L, 3));  
      
