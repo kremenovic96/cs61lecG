@@ -53,7 +53,16 @@ public class IntList {
       * to change. */
     public static IntList incrList(IntList L, int x) {
         /* Your code here. */
-        return L;        
+// starting ..
+  IntList q = new IntList(L.head, L.tail);
+ IntList p = q;
+ while ( p != null)
+ {
+   p.head = p.head + x;
+   p = p.tail;
+
+ }
+        return q;        
     }
 
     /** Returns an IntList identical to L, but with
@@ -61,6 +70,14 @@ public class IntList {
       * the 'new' keyword. */
     public static IntList dincrList(IntList L, int x) {
         /* Your code here. */
+ IntList runner;
+ runner = L;
+ while (runner != null)
+  {
+    runner.head = runner.head + x;
+    runner = runner.tail;
+
+  }
         return L;
     }
 
@@ -74,7 +91,8 @@ public class IntList {
 
         // Test your answers by uncommenting. Or use the Visualizer.
         // System.out.println(L.get(1));
-        // System.out.println(incrList(L, 3));
-        // System.out.println(dincrList(L, 3));        
+         System.out.println(incrList(L, 3));
+         System.out.println(dincrList(L, 3));  
+     
     }
 } 
