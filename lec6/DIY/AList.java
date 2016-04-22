@@ -30,7 +30,10 @@ public class AList {
     /** Deletes item from back of the list and
       * returns deleted item. */
     public int deleteBack() {
-        return 0;
+      int back = getBack();
+   items[size-1] = 0;
+     size = size-1;
+        return back;
     }
 
     /** Returns the number of items in the list. */
