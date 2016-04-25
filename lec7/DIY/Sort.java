@@ -2,20 +2,26 @@ public class Sort {
 
 	/** Returns input strings in sorted order. 
 	  * Non-destructive. */
- public static int indexOfSmallest(String[] inputs)
+ public static int indexOfSmallest(String[] inputs,int k)
   {
+ /*int smallest = k;
+  for (int i=k;i<inputs.length;i++)
+   {
+     
 
 
+   }*/
+ return 0;
 
   }
- private public String[] sort(String[] inputs, int k)
+  public static String[] sort(String[] inputs, int k)
  {
-
-
+  int minDex = indexOfSmallest(inputs,2);
+ return inputs;
 
  }
 	public static String[] sort(String[] inputs) {
-         sort(inputs,0); 
+         return sort(inputs,0); 
 
 
 
