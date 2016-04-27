@@ -2,22 +2,26 @@
 import static org.junit.Assert.*;*/
 /** Tests the methods of the Sort class */
 public class TestSort {
- public static void testSort(){
+@org.junit.Test
+ public  void testSort(){
 String[] inputs = {"milvia","zero","josh","trump"};
 String[] expected={"josh","milvia","trump","zero"};
 String[] actual=Sort.sort(inputs);
  org.junit.Assert.assertArrayEquals(expected,actual);
- }
- public static void testIndexOfSmallest()
+ }@org.junit.Test
+ public  void testIndexOfSmallest()
  {
 String[] inputs = {"milvia","zero","josh","trump"};
-//int indexOfSmallest= Sort.indexOfSmallest(inputs,2);
 int expected = 2;
 int actual = Sort.indexOfSmallest(inputs,2);
 org.junit.Assert.assertEquals(expected,actual);
+expected =3;
+actual = Sort.indexOfSmallest(inputs,3);
+org.junit.Assert.assertEquals(expected,actual);
  }
-	public static void main(String[] args) {
- testSort();
-testIndexOfSmallest();
+	
+
+public static  void main(String[] args) {
+ jh61b.junit.TestRunner.runTests("all",TestSort.class);
 	}
 } 
